@@ -5,9 +5,9 @@ import Header from './components/Header';
 
 function App() {
   return (
-    <main>
+    <main className="w-full mx-auto p-5">
       <Header />
-      <section>
+      <section className="flex flex-wrap gap-4 mt-6">
         {contents.map((el) => (
           <Content key={el.id} content={el} />
         ))}
